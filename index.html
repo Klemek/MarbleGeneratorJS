@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Procedural Marble Generator</title>
+    <link rel="stylesheet" href="marble.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="pan1">
+        <label id="sl">Size of squares</label>
+        <br/>
+        <input type="range" id="s" max="50" min="1"/>
+        <br/>
+        <label id="slol">Slope</label>
+        <br/>
+        <input type="range" id="slo" max="100" min="0" />
+        <br/>
+        <br/>
+        <label id="color">Base Color</label>
+        <br/>
+        <input type="checkbox" id="rand">Random color</input>
+        <br/>
+        <label>Red:</label>
+        <input type="range" id="r" max="255" min="0"/>
+        <br/>
+        <label>Green:</label>
+        <input type="range" id="g" max="255" min="0"/>
+        <br/>
+        <label>Blue:</label>
+        <input type="range" id="b" max="255" min="0"/>
+        <br/>
+        <br/>
+        <label id="divl">Divergence</label>
+        <br/>
+        <input type="range" id="divn" max="255" min="0"/>
+        <br/>
+        <label>Red:</label>
+        <input type="range" id="rdiv" max="255" min="0"/>
+        <br/>
+        <label>Green:</label>
+        <input type="range" id="gdiv" max="255" min="0"/>
+        <br/>
+        <label>Blue:</label>
+        <input type="range" id="bdiv" max="255" min="0"/>
+        <br/>
+        <input type="submit" id="reset" value="Reset" />
+        <input type="submit" id="amaze" value="Amaze me !" />
+    </div>
+    <div id="pan2">
+        <label id="sl">Seed</label>
+        <br/>
+        <input id="seedt" type="text" />
+        <br/>
+        <input type="checkbox" id="lock">Lock seed</input>
+        <input type="submit" id="newseed" value="New seed" />
+    </div>
+    <script src="marble.js"></script>
+
+</html>
+</body>
+
+</html>
